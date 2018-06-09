@@ -1,2 +1,2 @@
 mac, windows, Linux
-This is my first line - Bye!
+This is totally new for this file
