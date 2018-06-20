@@ -6,6 +6,8 @@ CTRL + Shift + O --> shortcut for needed import(delete for unnecessary imports)
 
 
 
+
+
 There are 8 locators:
 1. id        --> By.id("something") is always unique (almost)to find by the id of the elements
 2. name      --> By.name("something") can be repeated to find by the name of elements
@@ -26,3 +28,77 @@ for ex: 		input.sendKeys(searchTerm + Keys.ENTER);
 getting text from page --> 
 1. getText()
 2. getAttribute("value")
+
+!!! If the locator matches multiple elements, findElement method always returns the first match
+
+Order of locators:
+    there is no best locators. Choice of locators depends on the application, type of the webelements,
+    attributes and text of the element etc ...
+    
+    id --> 
+    name --> (use if unique)
+    class --> (use if unique)
+    tag --> (use if unique)
+    
+    xpath/css
+    
+    -------------
+    findElement() --> returns a webelement
+    findElements() --> List<WebElements>
+    -------------
+   element.isSelected() --> returns true or false based on whether it is selected. works for checkboxes and radiobutton
+   
+   
+   //E[@A='t']
+   E --> tag
+   A --> attr
+   t --> value
+   //input[@type='checkbox']
+   // it means the xpath is relative xpath. Selenium will start searching for element anywhere in the html document
+   //input[@type='checkbox']
+
+   /html/body/div/div/div/form/input --> ABSOLUTE xpath which starts single firward slash (/).
+   It always start with the parent element of html document. Using of Absolute path depends on the HTML structure of the page.
+   Xpath may break if the html tree of the page changes.
+   
+   //*[@id="checkboxes"]/input[1] --> any element whose id - "something" which has a child input and which is the first child.
+
+if the / is in the middle, it means direct child.
+   .../div/form --> a div whose child is form
+if the / is in the middle, it means any descendent.
+   ../div//form --> a div which has a desendent form
+   
+CSS
+   
+   <input type="checkbox" checked="">
+   E[A='t']
+   input[type='checkbox']
+   
+   CSS vs XPATH
+   CSS is easy to read and write
+   CSS works fast with all browsers(even internet explorer)
+   CSS cannot handle text
+   CSS cannot handle index (cannot find the second child etc.)
+   CSS cannot jump to parent
+
+XPATH
+   has many combinations that css cannot do
+   can work with text
+   can find element based om imdex
+   can be hard to read and write
+   considered to be slow compared to css, very slow on IE
+   
+   ---------------------
+   
+   (//input[@type='checkbox'][2])
+    1. (//input[@type='checkbox']) --> returns all elements matching xpath inside the paranthesis
+    2. [2] --> returns the second element from the second element from the list from the step 1 
+    
+    --------------
+    select --> tag that indicates dropdown lists. Select tag contains option tags. Option tag
+    represents an option in the dropdown list
+    
+    To haandle the dropdown lists, Selenium uses Select class. We have to create a select object to be able to work
+    with dropdown lists.
+    
+    list.getFirstSelectedOption(); --> returns the selected element
