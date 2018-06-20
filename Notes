@@ -1,2 +1,28 @@
+SH O R T C U T S:
+
 CMD + Shift + O --> shortcut for needed import(delete for unnecessary imports) 
 CTRL + Shift + O --> shortcut for needed import(delete for unnecessary imports) 
+
+
+
+
+There are 8 locators:
+1. id        --> By.id("something") is always unique (almost)to find by the id of the elements
+2. name      --> By.name("something") can be repeated to find by the name of elements
+3. tagName   --> By.tagName("a") to find by the tag of the elements
+4. className --> By.class("something") to find by the class attribute. We can only use the class attribute if
+                 the attribute does not have space in it (made of multiple classes)
+5. linkText  --> By.linkText("Gmail") to find elements by the full text of a link. case sensitive, full match
+                 link text visible on the screen. not the value of href attribute in html
+6. partialLinkText --> By.partialLinkText("Gmail") to find elements by the partial text of a link, case sensitive
+                       Link text is the visible text on the screen. not the value of href attribute in html
+7. xpath
+8. css
+
+WebElement class represents element from page. findelement method returns a webelement object.
+Using the sendKeys method, we can hit the keys from the keyboard. Keys class provides all the button from the keyboard.
+for ex: 		input.sendKeys(searchTerm + Keys.ENTER);
+
+getting text from page --> 
+1. getText()
+2. getAttribute("value")
