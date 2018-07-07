@@ -1,0 +1,4 @@
+What is Maven?
+I am using Maven, so, I can manage my project easier and to automate this whole built proccess. I don't want to have everything
+seperately. I don't want to break this version of the code, every single time I push it and pull it. So actually, I centralize
+all dependencies and everyone is aware of which version all are we using.
