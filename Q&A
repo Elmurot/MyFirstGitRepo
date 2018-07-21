@@ -1,11 +1,31 @@
 What is Maven?
-I am using Maven, so, I can manage my project easier and to automate this whole built proccess. I don't want to have everything
-seperately. I don't want to break this version of the code, every single time I push it and pull it. So actually, I centralize
-all dependencies and everyone is aware of which version all are we using.
-
+I am using Maven, so, I can manage my project easier and to automate this whole built proccess.
+I don't want to have everythingseperately. I don't want to break this version of the code,
+every single time I push it and pull it. So actually, I centralize all dependencies and everyone
+is aware of which version all are we using.
+---------------------------------------------
 WINDOW HANDLING:
 1. Window ID --> each window/tab has auto generated unique ID
 2. driver.switchTo().window("window ID")
 3. sriver.getWindowHandle() --> returns window ID (String)
 4. sriver.getWindowHandles() --> return Set of window IDs. (Set<String>)
 5. Loop through the window IDs and switch to each window and put condition where you want to stop looping.
+---------------------------------------------
+IFRAME -> Independent HTML inside another HTML
+-> iframe or frame
+1. driver.switchTo().frame 
+   - index (int)
+   - name or id (String)
+   - WebElement (WebElement). Using regular locator 
+2. driver.switchTo().parentFrame; -> direct parent frame
+   driver.switchTo().defaultContent(); -> main page
+---------------------------------------------   
+ALERTS,POPUPS
+2types:
+1. Javascript alert (No HTML code)
+   --> Alert type synta: Alert alert = driver.switchTo().alert(); 
+2. Web based popup (HTML code)
+---------------------------------------------
+PAGE OBJECT MODEL -> DESIGN PATTERN 
+-> Creating the java classes that represents each page on the application.
+* Inside the page classes we will store WebElements and methods related to that specific page.
