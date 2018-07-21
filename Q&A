@@ -2,3 +2,10 @@ What is Maven?
 I am using Maven, so, I can manage my project easier and to automate this whole built proccess. I don't want to have everything
 seperately. I don't want to break this version of the code, every single time I push it and pull it. So actually, I centralize
 all dependencies and everyone is aware of which version all are we using.
+
+WINDOW HANDLING:
+1. Window ID --> each window/tab has auto generated unique ID
+2. driver.switchTo().window("window ID")
+3. sriver.getWindowHandle() --> returns window ID (String)
+4. sriver.getWindowHandles() --> return Set of window IDs. (Set<String>)
+5. Loop through the window IDs and switch to each window and put condition where you want to stop looping.
