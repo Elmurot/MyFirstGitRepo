@@ -31,3 +31,4 @@ PAGE OBJECT MODEL -> DESIGN PATTERN
 * Inside the page classes we will store WebElements and methods related to that specific page.
 ** PageFactory --> class that comes from Selenium library.
                > It initializes all the WebElements that is in the page class.
+*** Methods in the Page Object classes are actions/operations related to that page
