@@ -1,14 +1,52 @@
+Selenium Basics:
+=>  methods that work with page as whole:
+    get.navigate().to()
+    navigate().forward()
+    navigate().back()
+    navigate().refresh()
+    getTitle()
+    getPageSource()
+    getCurrentUrl()
+    close() and quit()
+    
+WebElements: findElement()
+             findElements()
+             By class
+                  By.id()
+                  By.name()
+                  By.className()
+                  By.tagName()
+                  By.xpath()
+                  By.css()
+                  By.linkText()
+                  By.partialLinkText()
+                  
+After finding Element:
+   clear()
+   click()
+   sendKeys()
+   getText()
+   getAttribute("value")
+   isDisplayed()
+   isEnabled()
+   isSelected() -> checkbox and radio
+   getLocation()
+   
+   Select class
+      -> selectByIndex/visibletext/value
+      -> getOptions -> ListOfOptions etc
+      -> getFirstSelectedOption
+   -----------------------------------
 What is Maven?
-I am using Maven, so, I can manage my project easier and to automate this whole built proccess.
-I don't want to have everythingseperately. I don't want to break this version of the code,
-every single time I push it and pull it. So actually, I centralize all dependencies and everyone
-is aware of which version all are we using.
+I am using Maven, so, I can manage my project easier and to automate this whole built proccess. I don't want to have
+everythingseperately. I don't want to break this version of the code, every single time I push it and pull it.
+So actually, I centralize all dependencies and everyone is aware of which version all are we using.
 ---------------------------------------------
 WINDOW HANDLING:
 1. Window ID --> each window/tab has auto generated unique ID
 2. driver.switchTo().window("window ID")
-3. sriver.getWindowHandle() --> returns window ID (String)
-4. sriver.getWindowHandles() --> return Set of window IDs. (Set<String>)
+3. driver.getWindowHandle() --> returns window ID (String)
+4. driver.getWindowHandles() --> return Set of window IDs. (Set<String>)
 5. Loop through the window IDs and switch to each window and put condition where you want to stop looping.
 ---------------------------------------------
 IFRAME -> Independent HTML inside another HTML
