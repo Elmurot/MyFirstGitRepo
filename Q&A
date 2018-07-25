@@ -1,3 +1,6 @@
+Command + shift + R => gives you a filterable list of all files in your workspace.
+Ctrl + H => for searching Text, Declarations, References in your Workspace
+
 Selenium Basics:
 =>  methods that work with page as whole:
     get.navigate().to()
