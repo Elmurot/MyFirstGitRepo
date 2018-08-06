@@ -1,0 +1,9 @@
+Tell me about your framework?
+
+My framework is TestNG maven framework. Our framework is written on Java using the Eclipse IDE.
+I use maven for managing dependencies, running the tests from command line as maven lifecycle.
+It uses TestNG for assertions and running, organizing tests. I use Selenium to interact with the browser.
+My framework uses Page Object Model (POM) model which increases the reusability and maintainability os the framework.
+I have different utility methods for browser operations and ...
+My framework generated HTML reports which is easy to understand for non technical people.
+It contains detailed test steps and screenshots for each failed test. 
