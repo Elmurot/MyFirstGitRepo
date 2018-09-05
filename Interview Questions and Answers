@@ -7,3 +7,16 @@ My framework uses Page Object Model (POM) model which increases the reusability 
 I have different utility methods for browser operations and ...
 My framework generated HTML reports which is easy to understand for non technical people.
 It contains detailed test steps and screenshots for each failed test. 
+
+What is Framework?
+If I told you to cut a piece of paper with dimensions 5m by 5m, then surely you would do that.
+But suppose I ask you to cut 1000 pieces of paper of the same dimensions. In this case, you won't do the measuring 1000 times;
+obviously, you would make a frame of 5m by 5m, and then with the help of it you would be able to cut 1000 pieces of paper
+in less time. So, what you did was make a framework which would do a specific type of task.
+Instead of performing the same type of task again and again for the same type of applications,
+you create a framework having all those facilities together in one nice packet,
+hence providing the abstraction for your application and more importantly many applications.
+
+Difference between webdriver.close() and .quit()
+Driver.close() - It is used to close the browser or page currently which is having the focus.
+Driver.quit() - I closes all browser windows and safely ends the session
