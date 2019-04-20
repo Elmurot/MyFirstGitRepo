@@ -25,6 +25,11 @@ no-argument constructor is called. With super(parameter list), the superclass co
 called. If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to
 the no-argument constructor of the superclass.
 
+----------------------------------  THIS KEYWORD ----------------------------------
+this keyword in java can be used inside the Method or constructor of  Class. It(this) works as a reference to the current
+Object, whose Method or constructor is being invoked. This keyword can be used to refer to any member of the current object
+from within an instance Method or a constructor.
+
 ----------------------------- DMD(Dynamic Method Dispatch) -------------------------
 Child extesnds Parent
 
