@@ -1,0 +1,44 @@
+
+-------------------------- LOCAL/CLASS/INSTANCE VARIABLES -----------------------
+Local variables are declared in methods, constructors, or blocks. Local variables are visible only within the declared method,
+constructor, or block.
+Class variables also known as Static variables are declared with the static keyword in a class, but outside a method,
+constructor or a block. Static variables can be accessed by calling with the class name ClassName.VariableName.
+Instance variables are declared in a class, but outside a method, constructor or any block. Instance variables are created
+when an object is created with the use of the keyword 'new' and destroyed whenthe object is destroyed.
+
+-------------------------------- METHOD OVERRIDING --------------------------------
+When you have two methods with the same name and same number of parameters and they both belong to 2 different classes
+but those classes are linked with the concept of inheritance, this is called Method overloading.
+You can also call it as Runtime Polymorphism, Late Binding, Dynamic Binding.
+
+---------------------------------  FINAL KEYWORD ----------------------------------
+Final Variable: Once final variable is assigned, you cannot change it.
+Final Method: You cannot override final method, but you can overload it.
+Final Class: You can not inherit properties(variables and methods) from final class.
+
+----------------------------------  SUPER KEYWORD ----------------------------------
+super keyword is used to access Superclass Members. It can be variable, method or constructor.
+super() must be the first statement in Child Class constructor. With super(), the superclass no-argument constructor is called.
+With super(parameter list), the superclass constructor with a matching parameter list is called. With super(), the superclass
+no-argument constructor is called. With super(parameter list), the superclass constructor with a matching parameter list is
+called. If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to
+the no-argument constructor of the superclass.
+
+----------------------------- DMD(Dynamic Method Dispatch) -------------------------
+Child extesnds Parent
+
+Parent p = new Parent();
+Child c = new Child();
+YES --> Parent = new Child(); --> Upcasting 
+NO  --> Child c = new Parent(); --> Incompatible type(X)
+
+*** When Parent class reference variable refers to Child class object, it is known as Upcasting
+
+------------------- STATIC(Dynamic Method Dispatch) -------------------------
+When a member is declared static, it can be accessed without creating an object. Since static variables belong to a class,
+they can be accessed directly using class name and don’t need any object reference. It is executed before the main method at
+the time of classloading.
+In java, when you want to call one particular method in a class, you need to create object of that class but if you use 
+"static" keyword with your method, you don't need to create object, you can just call by class name like that: Abc.show();
+non static variables cannot be used in static method!
