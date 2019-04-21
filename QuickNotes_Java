@@ -33,9 +33,10 @@ Concrete methods - finished actions/methods.
 ----------------------------------------- INTERFACES --------------------------------------
 Abstract class is used for achieving partial abstraction. Unlike abstract class an interface is used for full abstraction.
 Abstraction is a process where you show only “relevant” data and “hide” unnecessary details of an object from the user.
-Interface looks like a class but it is not a class. But,like abstract class, you cannot create an object of interface. 
-An interface can have methods and variables just like the class but the methods declared in interface are by default abstract
-(only method signature, no body). 
+Interface looks like a class but it is not a class. But,like abstract class, you cannot create an object of interface.
+To achieve this, intitially you have to create class which implements that interface then you can create an object of class
+which implements interface. An interface can have methods and variables just like the class but the methods declared in
+interface are by default abstract (only method signature, no body). 
 Since methods in interfaces do not have body, they have to be implemented by the class before you can access them.
 The class that implements interface must implement all the methods of that interface. Also, java programming language
 does not allow you to extend more than one class, However you can implement more than one interfaces in your class. Also,
