@@ -1,5 +1,5 @@
 
--------------------------- LOCAL/CLASS/INSTANCE VARIABLES -----------------------
+---------------------------- LOCAL/CLASS/INSTANCE VARIABLES -------------------------
 Local variables are declared in methods, constructors, or blocks. Local variables are visible only within the declared method,
 constructor, or block.
 Class variables also known as Static variables are declared with the static keyword in a class, but outside a method,
@@ -8,6 +8,24 @@ Class variable has initial value by default:Zero for numbers, false for booleans
 Instance variables are declared in a class, but outside a method, constructor or any block. Instance variables are created
 when an object is created with the use of the keyword 'new' and destroyed whenthe object is destroyed. Instance variable has
 initial value by default:Zero for numbers, false for booleans, or null for object references.
+
+---------------------------------- ANONYMOUS OBJECT ----------------------------------
+
+Whenever an object is instantiated but is not assigned a reference variable, it is called anonymous object instantiation.
+
+     Simple object instantiation:
+     Sample s = new Sample();
+
+     Anonymous object instantiation:
+     new Sample();
+
+The anonymous object is created and dies instantaneously. But, still  with anonymous objects work can be extracted before
+it dies like calling a method using the anonymous object:
+
+     new Sample().display()
+
+The anonymous object can be used only once in the program.  We can’t use  twice or more as the anonymous object dies
+immediately after doing its  assigned task.
 
 -------------------------------- METHOD OVERRIDING --------------------------------
 When you have two methods with the same name and same number of parameters and they both belong to 2 different classes
@@ -42,7 +60,7 @@ NO  --> Child c = new Parent(); --> Incompatible type(X)
 
 *** When Parent class reference variable refers to Child class object, it is known as Upcasting
 
-------------------- STATIC(Dynamic Method Dispatch) -------------------------
+----------------------------------- STATIC KEYWORD -----------------------------------
 When a member is declared static, it can be accessed without creating an object. Since static variables belong to a class,
 they can be accessed directly using class name and don’t need any object reference. It is executed before the main method at
 the time of classloading.
