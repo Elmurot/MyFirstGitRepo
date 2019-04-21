@@ -10,7 +10,6 @@ when an object is created with the use of the keyword 'new' and destroyed whenth
 initial value by default:Zero for numbers, false for booleans, or null for object references.
 
 ---------------------------------- ANONYMOUS OBJECT ----------------------------------
-
 Whenever an object is instantiated but is not assigned a reference variable, it is called anonymous object instantiation.
 
      Simple object instantiation:
