@@ -18,7 +18,7 @@ create working methods and variables, then re-use all or part of them without co
 ----------------------------------------- ABSTRACTION --------------------------------------
 Abstraction is a process of hiding the implementation details from the user. Оnly the functionality will be provided to the
 user. In Java, abstraction is achieved using abstract classes and interfaces.
-A Java abstract class is a class which cannot be instantiated, meaning you cannot create new instances of an abstract class.
+A Java abstract class is a class which cannot be instantiated, meaning you cannot create objects of an abstract class.
 The purpose of an abstract class is to function as a base for subclasses. In Java you declare that a class is abstract by
 adding the abstract keyword to the class declaration. An abstract class can have abstract methods. You declare a method
 abstract by adding the abstract keyword in front of the method declaration. 
