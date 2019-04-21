@@ -15,7 +15,6 @@ OOP concepts in Java are the main ideas behind Java’s Object Oriented Programm
 inheritance, and polymorphism. Grasping them is key to understanding how Java works. Basically, Java OOP concepts let us
 create working methods and variables, then re-use all or part of them without compromising security.
 
-
 ----------------------------------------- ABSTRACTION --------------------------------------
 Abstraction is a process of hiding the implementation details from the user. Оnly the functionality will be provided to the
 user. In Java, abstraction is achieved using abstract classes and interfaces.
@@ -33,7 +32,6 @@ be abstract methods. An abstract class can have a mixture of abstract and non-ab
 A Java object is a combination of data and procedures working on the available data. An object has a state and behavior.
 The state of an object is stored in fields (variables), while methods (functions) display the object's behavior.
 Objects are created from templates known as classes. In Java, an object is created using the keyword "new".
-
 
 ---------------------------------- ANONYMOUS OBJECT ----------------------------------
 Whenever an object is instantiated but is not assigned a reference variable, it is called anonymous object instantiation.
