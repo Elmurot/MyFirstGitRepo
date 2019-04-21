@@ -63,7 +63,7 @@ it dies like calling a method using the anonymous object:
      new Sample().display()
 
 The anonymous object can be used only once in the program.  We can’t use  twice or more as the anonymous object dies
-immediately after doing its  assigned task.
+immediately after doing its  assigned task. 
 
 -------------------------------- METHOD OVERRIDING --------------------------------
 When you have two methods with the same name and same number of parameters and they both belong to 2 different classes
