@@ -9,6 +9,32 @@ Instance variables are declared in a class, but outside a method, constructor or
 when an object is created with the use of the keyword 'new' and destroyed whenthe object is destroyed. Instance variable has
 initial value by default:Zero for numbers, false for booleans, or null for object references.
 
+
+----------------------------------------- OOPS(Object Oriented Programming System) --------------------------------------
+OOP concepts in Java are the main ideas behind Java’s Object Oriented Programming. They are an abstraction, encapsulation,
+inheritance, and polymorphism. Grasping them is key to understanding how Java works. Basically, Java OOP concepts let us
+create working methods and variables, then re-use all or part of them without compromising security.
+
+
+----------------------------------------- ABSTRACTION --------------------------------------
+Abstraction is a process of hiding the implementation details from the user. Оnly the functionality will be provided to the
+user. In Java, abstraction is achieved using abstract classes and interfaces.
+A Java abstract class is a class which cannot be instantiated, meaning you cannot create new instances of an abstract class.
+The purpose of an abstract class is to function as a base for subclasses. In Java you declare that a class is abstract by
+adding the abstract keyword to the class declaration. An abstract class can have abstract methods. You declare a method
+abstract by adding the abstract keyword in front of the method declaration. 
+An abstract method is a method that is declared without an implementation (without braces, and followed by a semicolon),
+like this:
+               abstract void moveTo(double deltaX, double deltaY);
+If a class has an abstract method, the whole class must be declared abstract. Not all methods in an abstract class have to
+be abstract methods. An abstract class can have a mixture of abstract and non-abstract methods.
+
+----------------------------------------- OBJECT --------------------------------------
+A Java object is a combination of data and procedures working on the available data. An object has a state and behavior.
+The state of an object is stored in fields (variables), while methods (functions) display the object's behavior.
+Objects are created from templates known as classes. In Java, an object is created using the keyword "new".
+
+
 ---------------------------------- ANONYMOUS OBJECT ----------------------------------
 Whenever an object is instantiated but is not assigned a reference variable, it is called anonymous object instantiation.
 
