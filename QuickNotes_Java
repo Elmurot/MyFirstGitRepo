@@ -104,4 +104,4 @@ they can be accessed directly using class name and don’t need any object refer
 the time of classloading.
 In java, when you want to call one particular method in a class, you need to create object of that class but if you use 
 "static" keyword with your method, you don't need to create object, you can just call by class name like that: Abc.show();
-Non static variables cannot be used in static method!
+Non static variables cannot be used in static method! 
