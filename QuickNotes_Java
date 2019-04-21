@@ -37,7 +37,8 @@ Interface looks like a class but it is not a class. An interface can have method
 the methods declared in interface are by default abstract (only method signature, no body). 
 Since methods in interfaces do not have body, they have to be implemented by the class before you can access them.
 The class that implements interface must implement all the methods of that interface. Also, java programming language
-does not allow you to extend more than one class, However you can implement more than one interfaces in your class.
+does not allow you to extend more than one class, However you can implement more than one interfaces in your class. Also,
+the variables declared in an interface are public, static & final by default.
 
 ----------------------------------------- OBJECT --------------------------------------
 A Java object is a combination of data and procedures working on the available data. An object has a state and behavior.
@@ -100,4 +101,4 @@ they can be accessed directly using class name and don’t need any object refer
 the time of classloading.
 In java, when you want to call one particular method in a class, you need to create object of that class but if you use 
 "static" keyword with your method, you don't need to create object, you can just call by class name like that: Abc.show();
-non static variables cannot be used in static method!
+Non static variables cannot be used in static method!
