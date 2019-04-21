@@ -4,8 +4,10 @@ Local variables are declared in methods, constructors, or blocks. Local variable
 constructor, or block.
 Class variables also known as Static variables are declared with the static keyword in a class, but outside a method,
 constructor or a block. Static variables can be accessed by calling with the class name ClassName.VariableName.
+Class variable has initial value by default:Zero for numbers, false for booleans, or null for object references.
 Instance variables are declared in a class, but outside a method, constructor or any block. Instance variables are created
-when an object is created with the use of the keyword 'new' and destroyed whenthe object is destroyed.
+when an object is created with the use of the keyword 'new' and destroyed whenthe object is destroyed. Instance variable has
+initial value by default:Zero for numbers, false for booleans, or null for object references.
 
 -------------------------------- METHOD OVERRIDING --------------------------------
 When you have two methods with the same name and same number of parameters and they both belong to 2 different classes
