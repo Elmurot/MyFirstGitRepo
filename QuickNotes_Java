@@ -27,6 +27,8 @@ like this:
                abstract void moveTo(double deltaX, double deltaY);
 If a class has an abstract method, the whole class must be declared abstract. Not all methods in an abstract class have to
 be abstract methods. An abstract class can have a mixture of abstract and non-abstract methods.
+Abstract methods - undefined actions/methods.
+Concrete methods - finished actions/methods.
 
 ----------------------------------------- OBJECT --------------------------------------
 A Java object is a combination of data and procedures working on the available data. An object has a state and behavior.
