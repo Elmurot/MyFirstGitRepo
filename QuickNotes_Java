@@ -41,7 +41,7 @@ Since methods in interfaces do not have body, they have to be implemented by the
 The class that implements interface must implement all the methods of that interface. Also, java programming language
 does not allow you to extend more than one class, However you can implement more than one interfaces in your class. Also,
 the variables declared in an interface are public, static & final by default.
-You can also define Default or Static method by only using "defult" or "static" keyword respectively.
+Since JAVA version 1.8, you can also define Default or Static method by only using "defult" or "static" keyword respectively.
 
 ----------------------------------------- OBJECT --------------------------------------
 A Java object is a combination of data and procedures working on the available data. An object has a state and behavior.
