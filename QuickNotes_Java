@@ -42,10 +42,14 @@ When you have two methods with the same name and same number of parameters and t
 but those classes are linked with the concept of inheritance, this is called Method overriding.
 You can also call it as Runtime Polymorphism, Late Binding, Dynamic Binding.
 
----------------------------------  FINAL KEYWORD ----------------------------------
+---------------------------------  FINAL, FINALLY, FINALIZE KEYWORDS ----------------------------------
 Final Variable: Once final variable is assigned, you cannot change it.
 Final Method: You cannot override final method, but you can overload it.
 Final Class: You can not inherit properties(variables and methods) from final class.
+
+Finally is a block. Finally is used to place important code, it will be executed whether exception is handled or not.
+
+Finalize is a method. Finalize is used to perform clean up processing just before object is garbage collected.
 
 ----------------------------------  SUPER KEYWORD ----------------------------------
 super keyword is used to access Superclass Members. It can be variable, method or constructor.
