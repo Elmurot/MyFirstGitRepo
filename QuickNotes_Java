@@ -1,5 +1,5 @@
 
----------------------------- LOCAL/CLASS/INSTANCE VARIABLES -------------------------
+----------------------------------------------- LOCAL/CLASS/INSTANCE VARIABLES ------------------------------------------
 Local variables are declared in methods, constructors, or blocks. Local variables are visible only within the declared method,
 constructor, or block.
 Class variables also known as Static variables are declared with the static keyword in a class, but outside a method,
@@ -15,12 +15,12 @@ OOP concepts in Java are the main ideas behind Java’s Object Oriented Programm
 inheritance, and polymorphism. Grasping them is key to understanding how Java works. Basically, Java OOP concepts let us
 create working methods and variables, then re-use all or part of them without compromising security.
 
------------------------------------------ OBJECT --------------------------------------
+------------------------------------------------------- OBJECT ----------------------------------------------------------
 A Java object is a combination of data and procedures working on the available data. An object has a state and behavior.
 The state of an object is stored in fields (variables), while methods (functions) display the object's behavior.
 Objects are created from templates known as classes. In Java, an object is created using the keyword "new".
 
------------------------------------------ CONSTRUCTOR --------------------------------------
+----------------------------------------------------- CONSTRUCTOR -------------------------------------------------------
 A constructor in Java is a block of code similar to a method that’s called when an instance of an object is created.
 Here are the key differences between a constructor and a method:
      * A constructor doesn’t have a return type.
@@ -32,7 +32,7 @@ and doesn’t initialize any fields.
 Like methods, constructors can be overloaded. In other words, you can provide more than one constructor for a class if
 each constructor has a unique signature. But keep in mind: Constructor Overriding is never possible in Java.
 
-------------------------------------- ANONYMOUS OBJECT ----------------------------------
+-------------------------------------------------- ANONYMOUS OBJECT -----------------------------------------------------
 Whenever an object is instantiated but is not assigned a reference variable, it is called anonymous object instantiation.
 
      Simple object instantiation:
@@ -49,12 +49,16 @@ it dies like calling a method using the anonymous object:
 The anonymous object can be used only once in the program.  We can’t use  twice or more as the anonymous object dies
 immediately after doing its  assigned task. 
 
--------------------------------- METHOD OVERRIDING --------------------------------
+------------------------------------------------- METHOD OVERLOADING ----------------------------------------------------
+When you have two methods with the same name but different type of parameters or different number of parameters in one class,
+it is called as Method Overloading.
+
+------------------------------------------------- METHOD OVERRIDING -----------------------------------------------------
 When you have two methods with the same name and same number of parameters and they both belong to 2 different classes
 but those classes are linked with the concept of inheritance, this is called Method overriding.
 You can also call it as Runtime Polymorphism, Late Binding, Dynamic Binding.
 
----------------------------------  FINAL, FINALLY, FINALIZE KEYWORDS ----------------------------------
+---------------------------------------- FINAL, FINALLY, FINALIZE KEYWORDS ----------------------------------------------
 Final Variable: Once final variable is assigned, you cannot change it.
 Final Method: You cannot override final method, but you can overload it.
 Final Class: You can not inherit properties(variables and methods) from final class.
@@ -63,7 +67,7 @@ Finally is a block. Finally is used to place important code, it will be executed
 
 Finalize is a method. Finalize is used to perform clean up processing just before object is garbage collected.
 
-----------------------------------  SUPER KEYWORD ----------------------------------
+-------------------------------------------------- SUPER KEYWORD --------------------------------------------------------
 super keyword is used to access Superclass Members. It can be variable, method or constructor.
 super() must be the first statement in Child Class constructor. With super(), the superclass no-argument constructor is called.
 With super(parameter list), the superclass constructor with a matching parameter list is called. With super(), the superclass
@@ -71,12 +75,12 @@ no-argument constructor is called. With super(parameter list), the superclass co
 called. If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to
 the no-argument constructor of the superclass.
 
-----------------------------------  THIS KEYWORD ----------------------------------
+-------------------------------------------------- THIS KEYWORD ---------------------------------------------------------
 this keyword in java can be used inside the Method or constructor of  Class. It(this) works as a reference to the current
 Object, whose Method or constructor is being invoked. This keyword can be used to refer to any member of the current object
 from within an instance Method or a constructor.
 
------------------------------ DMD(Dynamic Method Dispatch) -------------------------
+-------------------------------------------- DMD(Dynamic Method Dispatch) -----------------------------------------------
 Child extesnds Parent
 
 Parent p = new Parent();
@@ -86,7 +90,7 @@ NO  --> Child c = new Parent(); --> Incompatible type(X)
 
 *** When Parent class reference variable refers to Child class object, it is known as Upcasting
 
------------------------------------ STATIC KEYWORD -----------------------------------
+--------------------------------------------------- STATIC KEYWORD ------------------------------------------------------
 When a member is declared static, it can be accessed without creating an object. Since static variables belong to a class,
 they can be accessed directly using class name and don’t need any object reference. It is executed before the main method at
 the time of classloading.
@@ -94,7 +98,7 @@ In java, when you want to call one particular method in a class, you need to cre
 "static" keyword with your method, you don't need to create object, you can just call by class name like that: Abc.show();
 Non static variables cannot be used in static method! 
 
------------------------------------------ ABSTRACTION --------------------------------------
+----------------------------------------------------- ABSTRACTION -------------------------------------------------------
 Abstraction is a process of hiding the implementation details from the user. Оnly the functionality will be provided to the
 user. In Java, abstraction is achieved using abstract classes and interfaces.
 A Java abstract class is a class which cannot be instantiated, meaning you cannot create objects of an abstract class.
@@ -109,7 +113,7 @@ be abstract methods. An abstract class can have a mixture of abstract and non-ab
 Abstract methods - undefined actions/methods.
 Concrete methods - finished actions/methods.
 
------------------------------------------ INTERFACES --------------------------------------
+------------------------------------------------------ INTERFACES -------------------------------------------------------
 Abstract class is used for achieving partial abstraction. Unlike abstract class an interface is used for full abstraction.
 Abstraction is a process where you show only “relevant” data and “hide” unnecessary details of an object from the user.
 Interface looks like a class but it is not a class. But,like abstract class, you cannot create an object of interface.
