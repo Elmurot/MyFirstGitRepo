@@ -49,15 +49,6 @@ it dies like calling a method using the anonymous object:
 The anonymous object can be used only once in the program.  We can’t use  twice or more as the anonymous object dies
 immediately after doing its  assigned task. 
 
-------------------------------------------------- METHOD OVERLOADING ----------------------------------------------------
-When you have two methods with the same name but different type of parameters or different number of parameters in one class,
-it is called as Method Overloading.
-
-------------------------------------------------- METHOD OVERRIDING -----------------------------------------------------
-When you have two methods with the same name and same number of parameters and they both belong to 2 different classes
-but those classes are linked with the concept of inheritance, this is called Method overriding.
-You can also call it as Runtime Polymorphism, Late Binding, Dynamic Binding.
-
 ---------------------------------------- FINAL, FINALLY, FINALIZE KEYWORDS ----------------------------------------------
 Final Variable: Once final variable is assigned, you cannot change it.
 Final Method: You cannot override final method, but you can overload it.
@@ -98,6 +89,17 @@ In java, when you want to call one particular method in a class, you need to cre
 "static" keyword with your method, you don't need to create object, you can just call by class name like that: Abc.show();
 Non static variables cannot be used in static method! 
 
+----------------------------------------------------- POLYMORPHISM ------------------------------------------------------
+Polymorphism means more than one form, same object performing different operations according to the requirement. Polymorphism
+can be achieved by using two ways, those are:
+    * Method overriding (When you have two methods with the same name but different type of parameters or different number of
+      parameters in one class, it is called as Method Overloading.)
+    * Method overloading (When you have two methods with the same name and same number of parameters and they both belong to
+      2 different classes but those classes are linked with the concept of inheritance, this is called Method overriding.
+      You can also call it as Runtime Polymorphism, Late Binding, Dynamic Binding.)
+In Java to achieve polymorphism a super class reference variable can hold the sub class object. To achieve the polymorphism
+every developer must use the same method names in the project.
+
 ----------------------------------------------------- ABSTRACTION -------------------------------------------------------
 Abstraction is a process of hiding the implementation details from the user. Оnly the functionality will be provided to the
 user. In Java, abstraction is achieved using abstract classes and interfaces.
@@ -112,6 +114,15 @@ If a class has an abstract method, the whole class must be declared abstract. No
 be abstract methods. An abstract class can have a mixture of abstract and non-abstract methods.
 Abstract methods - undefined actions/methods.
 Concrete methods - finished actions/methods.
+
+----------------------------------------------------- ENCAPSULATION -----------------------------------------------------
+Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and
+the data it manipulates.Other way to think about encapsulation is, it is a protective shield that prevents the data from
+being accessed by the code outside this shield.
+Technically in encapsulation, the variables or data of a class is hidden from any other class and can be accessed only through
+any member function of own class in which they are declared. As in encapsulation, the data in a class is hidden from other
+classes, so it is also known as data-hiding. Encapsulation can be achieved by: Declaring all the variables in the class as
+private and writing public methods in the class to set and get the values of variables.
 
 ------------------------------------------------------ INTERFACES -------------------------------------------------------
 Abstract class is used for achieving partial abstraction. Unlike abstract class an interface is used for full abstraction.
