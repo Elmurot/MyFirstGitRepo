@@ -1,3 +1,11 @@
+If you save your driver in this specific place: /usr/local/bin
+You don't have to write System.set.property in your class.
+
+
+
+
+
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
