@@ -1,6 +1,9 @@
 If you save your driver in this specific place: /usr/local/bin
 You don't have to write System.set.property in your class.
 
+Verify is a command which works with Selenium IDE and you have soft assert in TestNG, so both are same.
+Since Selenium IDE is a just record and play tool so I would suggest you can continue with Webdriver with TestNG.
+
 
 
 
