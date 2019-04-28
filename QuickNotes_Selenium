@@ -33,6 +33,7 @@ would continue with the next step after the assert statement.
 
 If there is any exception and you want to throw it then you need to use assertAll() method as a last statement in the @Test
 and test suite again continue with next @Test as it is.
+assertAll() is used to mark the test case as failed, if any soft assertion is getting failed.
 
 We need to create an object to use Soft Assert which is not needed in Hard Assert.
 
