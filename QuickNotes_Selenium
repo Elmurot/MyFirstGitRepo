@@ -1,11 +1,40 @@
 If you save your driver in this specific place: /usr/local/bin
 You don't have to write System.set.property in your class.
 
-Verify is a command which works with Selenium IDE and you have soft assert in TestNG, so both are same.
+What Is The Difference Between Assert And Verify In Selenium?
+
+In simple words, if the assert condition is true then the program control will execute the next test step but if
+the condition is false, the execution will stop and further test step will not be executed.
+To overcome this we use Soft Assert in TestNG.
+
+
+In simple words, there wont be any halt in the test execution even though the verify condition is true or false.
+Note: In TestNG, we use only Assert Statements.  We can use Verify statement in terms of if-else and try-catch.
+Verify is also a command which works with Selenium IDE and you have soft assert in TestNG, so both are same.
 Since Selenium IDE is a just record and play tool so I would suggest you can continue with Webdriver with TestNG.
 
 
 
+
+Asserts are used to perform validations in the test scripts.
+
+There are two types of Assert:
+
+Hard Assert
+Soft Assert
+
+Hard Assert – Hard Assert throws an AssertException immediately when an assert statement fails and test suite continues with
+next @Test
+The disadvantage of Hard Assert – It marks method as fail if assert condition gets failed and the remaining statements
+inside the method will be aborted. To overcome this we need to use Soft Assert. 
+
+Soft Assert – Soft Assert collects errors during @Test. Soft Assert does not throw an exception when an assert fails and
+would continue with the next step after the assert statement.
+
+If there is any exception and you want to throw it then you need to use assertAll() method as a last statement in the @Test
+and test suite again continue with next @Test as it is.
+
+We need to create an object to use Soft Assert which is not needed in Hard Assert.
 
 
 
