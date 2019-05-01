@@ -1,3 +1,23 @@
+===============================Capture Screenshot in Selenium WebDriver using FileHandler Class===============================
+In the latest version of Selenium, FileHandler class is implemented to capture screenshot instead of FileUtils.
+We have to import package “org.openqa.selenium.io.FileHandler” to work with FileHandler class
+
+	    TakesScreenshot ts=(TakesScreenshot)driver;
+	    FileHandler.copy(ts.getScreenshotAs(OutputType.FILE), new File("C:\\Selenium Project\\CaptureScreenshot.png"));
+
+Before Selenium 3.6.0, Apache Commons Library comes along with Selenium. But in Selenium new versions from Selenium 3.6.0
+onwards, we have to download it separately to use it in our project. You can download it from https://commons.apache.org/
+
+If you are using Maven Project, here is the dependency of Apache Commons Library
+
+<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+<dependency>
+<groupId>org.apache.commons</groupId>
+<artifactId>commons-io</artifactId>
+<version>1.3.2</version>
+</dependency>
+==============================================================================================================================
+
 If you save your driver in this specific place: /usr/local/bin
 You don't have to write System.set.property in your class.
 
