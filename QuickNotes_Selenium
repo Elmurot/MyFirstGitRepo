@@ -17,7 +17,7 @@ If you are using Maven Project, here is the dependency of Apache Commons Library
 <version>1.3.2</version>
 </dependency>
 ===============================================================================================================================
-===========================WebDriver driver = new FirefoxDriver() ? Why we write in Selenium Scripts===========================
+========================== WebDriver driver = new FirefoxDriver() ? Why we write in Selenium Scripts ==========================
 SearchContext(findElement(),findElements()) is the super interface in selenium, which is extended by another interface called
 WebDriver(get(),close()). All the abstract methods of SearchContext and WebDriver interfaces are implemented in RemoteWebDriver
 class. All the browser related classes such as FirefoxDriver, ChromeDriver etc., extends the RemoteWebdriver class.
@@ -35,6 +35,90 @@ testing is also very important.
 If we want to run our automation scripts on the remote machine’s browser then we use RemoteWebDriver. RemoteWebDriver requires
 the Selenium Standalone Server to be running but to use other drivers Selenium Standalone Server is not required.
 ===============================================================================================================================
+==================================== Where you have applied OOPS in Automation Framework ? ====================================
+
+ABSTRACTION
+In Page Object Model design pattern, we write locators (such as id, name, xpath etc.,) in a Page Class. We utilize these
+locators in tests but we can’t see these locators in the tests. Literally we hide the locators from the tests.
+Abstraction is the methodology of hiding the implementation of internal details and showing the functionality to the users.
+
+INTERFACE
+Basic statement we all know in Selenium is WebDriver driver = new FirefoxDriver();
+WebDriver itself is an Interface. So based on the above statement WebDriver driver = new ChromeDriver(); we are initializing
+Chrome browser using Selenium WebDriver. It means we are creating a reference variable (driver) of the interface (WebDriver)
+and creating an Object of ChromeDriver class. An interface can have methods and variables just like the class but the methods
+declared in interface are by default abstract.
+
+INHERITANCE
+We create a Base Class in the Framework to initialize WebDriver interface, WebDriver waits, Property files, Excels, etc.,
+in the Base Class. We extend the Base Class in other classes such as Tests and Utility Class. Extending one class into other
+class is known as Inheritance.
+
+POLYMORPHISM
+Combination of overloading and overriding is known as Polymorphism. We will see both overloading and overriding below.
+
+METHOD OVERLOADING
+We use implicit wait in Selenium. Implicit wait is an example of overloading. In Implicit wait we use different time stamps
+such as SECONDS, MINUTES, HOURS etc.,
+A class having multiple methods with same name but different parameters is called Method Overloading.
+
+METHOD OVERRIDING
+Declaring a method in child class which is already present in the parent class is called Method Overriding. Examples are
+get() and navigate() methods of different drivers in Selenium .
+
+ENCAPSULATION
+All the classes in a framework are an example of Encapsulation. In POM classes, we declare the data members using @FindBy
+and initialization of data members will be done using Constructor to utilize those in methods.
+Encapsulation is a mechanism of binding code and data together in a single unit.
+
+WEB ELEMENT:
+Web element is an interface used to identify the elements in a web page.
+
+WEBDRIVER:
+WebDriver is an interface used to launch different browsers such as Firefox, Chrome, Internet Explorer, Safari etc.,
+
+FIND BY:
+FindBy is an annotation used in Page Object Model design pattern to identify the elements.
+
+FIND ELEMENT:
+Find Element is a method in POM to identify the elements in a web page.
+===============================================================================================================================
+==================== Top 7 Challenges in Test Automation {Challenges & Limitations in Selenium WebDriver} ====================
+
+1. We cannot test windows application:
+Selenium doesn’t support windows based applications. It supports only web-based applications.
+
+2. We cannot test mobile apps:
+We can test on any operating system and browser on the desktop using selenium but we cant deal mobile testing with selenium
+alone. But there is a solution for this. You can use Appium to handle iOS and Android native, mobile, and hybrid apps using
+the WebDriver protocol.
+
+3. Limited reporting:
+With selenium, you couldn’t generate a good report. But there is a workaround. You can generate reports using TestNG or
+Extent reports.
+
+4. Handling dynamic Elements:
+Some of the web elements are dynamic in nature. If an element’s id is changing on every page load then it bit tricky to handle
+this in the normal way. We need to handle the dynamic elements with dynamic xpath or dynamic css selectors. Functions like
+starts-with, contains, ends with, etc., works well to handle dynamic objects.
+
+5. Handling page load:
+Some of the web pages are user specific. These user-specific pages load different elements depends on the different user.
+Sometimes some elements appear depends upon the previous action. If you choose a country from country dropdown then cities
+related that country will load in the cities dropdown. In runtime selenium script may not identify the element. To overcome
+this we need to use explicit waits in the script to give the elements enough time to load and to identify the element.
+
+6. Handling pop up windows:
+Windows-based pops are part of the operating system. It’s beyond selenium’s capabilities. We could use AutoIT to handle the
+windows based popups.
+
+7. Handling captcha:
+Handling captcha is a limitation in selenium. There are some third-party tools to automate captcha but still, we cannot
+achieve 100% results.
+===============================================================================================================================
+
+
+
 
 If you save your driver in this specific place: /usr/local/bin
 You don't have to write System.set.property in your class.
@@ -50,8 +134,6 @@ In simple words, there wont be any halt in the test execution even though the ve
 Note: In TestNG, we use only Assert Statements.  We can use Verify statement in terms of if-else and try-catch.
 Verify is also a command which works with Selenium IDE and you have soft assert in TestNG, so both are same.
 Since Selenium IDE is a just record and play tool so I would suggest you can continue with Webdriver with TestNG.
-
-
 
 
 Asserts are used to perform validations in the test scripts.
