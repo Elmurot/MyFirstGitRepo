@@ -46,6 +46,15 @@ integrity.
 
 It is performed from start to finish under real-world scenarios like communication of the application with hardware, network,
 database and other applications.
+End to End testing of a Gmail account will include the following steps:
+
+Launching Gmail login page through URL.
+Logging into Gmail account by using valid credentials.
+Accessing Inbox. Opening Read and Unread emails.
+Composing a new email, reply or forward an email.
+Opening Sent items and checking emails.
+Checking emails in the Spam folder
+Logging out of Gmail application by clicking ‘logout’
 ===============================================================================================================================
 ====================================================== What is Retesting? =====================================================
 RETESTING:
