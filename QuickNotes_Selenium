@@ -39,6 +39,14 @@ Example: Loading the home page takes 5 seconds. Reducing the load time to 2 seco
 Example: Updating the Database from MySQL to Oracle)
 
 ===============================================================================================================================
+===================================================== What is E2E Testing? ====================================================
+End-to-end testing is a Software testing methodology to test an application flow from start to end. The purpose of End to end
+testing is to simulate the real user scenario and validate the system under test and its components for integration and data
+integrity.
+
+It is performed from start to finish under real-world scenarios like communication of the application with hardware, network,
+database and other applications.
+===============================================================================================================================
 ====================================================== What is Retesting? =====================================================
 RETESTING:
 To ensure that the defects which were found and posted in the earlier build were fixed or not in the current build. Say,
