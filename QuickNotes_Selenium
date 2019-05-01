@@ -63,7 +63,53 @@ Build 1.0 was released. Test team found some defects (Defect Id 1.0.1, 1.0.2) an
 now testing the defects 1.0.1 and 1.0.2 in this build is retesting.
 
 Retesting done on failed test cases whereas Regression Testing done on passed test cases.
+===============================================================================================================================
+====================================================== What is Functional Testing? =====================================================
 
+
+Functional Testing Types
+Functional testing has many categories and these can be used based on the scenario.
+
+Unit Testing:
+Unit testing is usually performed by a developer who writes different code units that could be related or unrelated to achieve
+a particular functionality.
+
+===============================================================================================================================
+======================================== What is Smoke Testing? What is Sanity Testing?========================================
+EXAMPLE:
+
+Assume an application - ATM Software
+
+Features of ATM: Login / Verify Pin, Withdraw Money, Change Pin, Display Customer Name, Provide Bill, Show Balance,
+Close Account once transaction is complete.
+
+Here the critical features are: Login / Verify PIN and Withdraw Money. The rest of the features are Minor.
+
+SMOKE TESTING
+Now assume the developer develops the ATM software version 1 or build 1 (40% complete). This is given to testers to test.
+As a tester we identify the critical features and test that first, because if Login does not work, we cannot withdraw money
+or access any other features. Also Withdraw Money feature is important because that is the basic need with an ATM.
+
+So if a critical bug is not found first or if it is found during half way through testing. We have to wait for the developer
+to fix it. This might take time as developer is busy developing new feature and fixing bugs. Eg: Requirement X has some error
+and if it is not found early we are wasting both the time of developer and testing team.
+
+Whereas all the other bugs are minor and we can wait for the developer to fix it in the upcoming releases or in new build.
+These minor bugs would not stop us from testing other features / it does not affect any other modules of ATM software.
+Hence we save time. This is Smoke Testing!
+
+
+SANITY TESTING
+Assume a Build 2 is developed by Developers. It has only 3 features: Login, Show balance and Withdraw money.
+
+Suppose we reported bug in requirement - Login and Show balance features while testing Build 2. The developer is meanwhile
+developing new features and fixing the bugs reported by us. ie: Login and Show balance.
+
+Now when Build 3 is released it has 5 features: Login, Show balance, Withdraw Money, Change Pin and Provide Bill.
+
+Build 3 is given to us for testing, so we first perform smoke testing and then we check if Login and Show balance is working
+(ie. Check if bug were fixed and correct). Only after this we move on to testing the new features added to this build 3.
+This is known as Sanity Testing.
 ===============================================================================================================================
 ========================== WebDriver driver = new FirefoxDriver() ? Why we write in Selenium Scripts ==========================
 SearchContext(findElement(),findElements()) is the super interface in selenium, which is extended by another interface called
