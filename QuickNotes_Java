@@ -1,31 +1,6 @@
 You can pass an object of any class as a parameter into your method, then you can use (access) that class properties(variables
 and methods).
 
-package javaTutorial;
-
-class Cube {
-	int length;
-	int bredth;
-	int height;
-
-	public Cube(int l, int b, int h) {
-		this.length = l;
-		this.bredth = b;
-		this.height = h;
-	}
-
-	public int getVolume() {
-		return (length * bredth * height);
-	}
-}
-
-public class MyClass {
-
-	public static void main(String[] args) {
-		Cube c1 = new Cube(4, 4, 4);
-		System.out.println(c1.getVolume());
-	}
-}
 
 
 
@@ -61,6 +36,32 @@ If you do not provide a constructor for a class, Java will automatically create 
 and doesn’t initialize any fields.      
 Like methods, constructors can be overloaded. In other words, you can provide more than one constructor for a class if
 each constructor has a unique signature. But keep in mind: Constructor Overriding is never possible in Java.
+
+package javaTutorial;
+
+class Cube {
+	int length;
+	int bredth;
+	int height;
+
+	public Cube(int l, int b, int h) {
+		this.length = l;
+		this.bredth = b;
+		this.height = h;
+	}
+
+	public int getVolume() {
+		return (length * bredth * height);
+	}
+}
+
+public class MyClass {
+
+	public static void main(String[] args) {
+		Cube c1 = new Cube(4, 4, 4);
+		System.out.println(c1.getVolume());
+	}
+}
 
 -------------------------------------------------- ANONYMOUS OBJECT -----------------------------------------------------
 Whenever an object is instantiated but is not assigned a reference variable, it is called anonymous object instantiation.
