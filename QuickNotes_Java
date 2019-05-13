@@ -1,32 +1,31 @@
 You can pass an object of any class as a parameter into your method, then you can use (access) that class properties(variables
 and methods).
 
-package com.elmurot.programs;
+package javaTutorial;
 
-class Rectangle {
-    int length;
-    int width;
+class Cube {
+	int length;
+	int bredth;
+	int height;
 
-    Rectangle(int l, int b) {
-        length = l;
-        width = b;
-    }
+	public Cube(int l, int b, int h) {
+		this.length = l;
+		this.bredth = b;
+		this.height = h;
+	}
 
-    void area(Rectangle r1) {
-        int areaOfRectangle = r1.length * r1.width;
-        System.out.println("Area of Rectangle : " + areaOfRectangle);
-    }
+	public int getVolume() {
+		return (length * bredth * height);
+	}
 }
 
-class RectangleDemo {
-    public static void main(String args[]) {
-        Rectangle r1 = new Rectangle(10, 20);
-        r1.area(r1);
-    }
-}
+public class MyClass {
 
-Output of the program :    
-    Area of Rectangle : 200
+	public static void main(String[] args) {
+		Cube c1 = new Cube(2, 3, 4);
+		System.out.println(c1.getVolume());
+	}
+}
 
 
 
