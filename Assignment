@@ -1,13 +1,11 @@
 A22:
-
 <!DOCTYPE HTML >
 <html>
 <head>
-<title>Time and Date stamp</title>
+<title>Local Current  Date and Time stamp</title>
 <meta name="" content="">
 <script>
-///////////
-///////// DATE generator    /////////
+
 function date_time(id){
         date = new Date;
         year = date.getFullYear();
@@ -22,30 +20,25 @@ function date_time(id){
         if(m<10){m = "0"+m;}
        s = date.getSeconds();
         if(s<10){s = "0"+s;}
-       result = 'Local Date: '+days[day]+', '+months[month]+' '+d+', '+year;
+       result = 'Current Date: '+days[day]+', '+months[month]+' '+d+', '+year;
         document.getElementById(id).innerHTML = result;
         setTimeout(''+'date_time("'+id+'");','1000');
         return true;
 }
-///////// end DATE Generator /////////
-//////////////////////////////////////
-/////////// Time Generator ///////////
+
 function tS(){ x=new Date(); x.setTime(x.getTime()); return x; } 
 function lZ(x){ return (x>9)?x:'0'+x; } 
 function tH(x){ if(x==0){ x=12; } return (x>12)?x-=12:x; } 
-function dT(){ if(fr==0){ fr=1; document.write('Local Time:'+'<font size=3><span id="tP">'+eval(oT)+'</span></b></font>'); } document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); } 
+function dT(){ if(fr==0){ fr=1; document.write('Current Time:'+'<font size=3><span id="tP">'+eval(oT)+'</span></b></font>'); } document.getElementById('tP').innerHTML=eval(oT); setTimeout('dT()',1000); } 
 function aP(x){ return (x>11)?'PM':'AM'; } 
 var fr=0,oT="' '+tH(tS().getHours())+':'+lZ(tS().getMinutes())+':'+lZ(tS().getSeconds())+' '+aP(tS().getHours())";
-///////// end Time Generator /////////
-/////////
+
 </script>
 </head>
 
 <body>
-<!--Date.. Easily adjustable with javascript Array-->
 <p><span id="date_time"></span></p>
-    <script type="text/javascript">window.onload = date_time('date_time');</script><!--this MUST be included for Date-->
-<!--Time in 12 hour format-->
+    <script type="text/javascript">window.onload = date_time('date_time');</script>
 <p><span id="dT"><script language="JavaScript">window.onload = dT('dT');</script></span></p>
 </body>
 </html> 
